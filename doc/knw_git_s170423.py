@@ -35,3 +35,23 @@ git remote set-url origin https://github.com/tomtomtech/try.git
 felnyomni az online (az originbe)
 $ git push -u origin master
 	az 'u' az jelenti hoogy jjegyezze meg és később elég a 'git push' parancs
+
+7.
+ellenorzes
+az ucso commit utani valtozasok
+$ git diff HEAD
+
+Meg stageleheto valtozasok
+git diff --staged
+
+Kiveszi a fajlt a add bol azaz mar nem kell rá a staged hasznalni, de lehet h kicsit félreértettem mert nem csinaltam végigaz elejétől.
+git reset v. git reset path/file_name.ext
+
+8.andHa vissza akarjuk kapni gy file utolso commitált állapotát. 
+$ git checkout -- file_name.ext
+
+
+
+9. Barnchelés
+Akkor használjuk pl ha uj featoron v bugfixen dolgozunk. Gyakorlatilag egy copy a master branchrol
+git baranch new_feature (group name a new_feature)
