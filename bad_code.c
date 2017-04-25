@@ -1,3 +1,0 @@
-bad code
-
-good code
